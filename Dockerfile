@@ -1,6 +1,23 @@
 # TODO: change to cyberbotics/webots.cloud:R2023a when available
 FROM leoduggan/webots.cloud-anim-edit:latest
 
+RUN apt-get update && apt-get install -y \
+    python3-pip \
+    libxerces-c-dev \
+    libfox-1.6-dev \
+    libgdal-dev \
+    libproj-dev \
+    libgl2ps-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install --upgrade pip && \
+    pip3 install --no-cache-dir \
+    lxml \
+    pyproj \
+    shapely \
+    webcolors \
+    configparser
+
 # Copy all the benchmark files into a project directory (need to have the same name as the theia folder from webots.yml)
 RUN mkdir -p /usr/local/webots-project
 COPY . /usr/local/webots-project
