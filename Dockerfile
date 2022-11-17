@@ -1,6 +1,5 @@
 # TODO: change to cyberbotics/webots.cloud:R2023a when available
-FROM leoduggan/webots.cloud-anim-edit:latest
-
+FROM cyberbotics/webots.cloud:R2022b
 RUN apt-get update && apt-get install -y \
     python3-pip \
     libxerces-c-dev \

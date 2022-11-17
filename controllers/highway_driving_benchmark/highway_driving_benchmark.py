@@ -208,6 +208,8 @@ elif sumoFailure:
 position = vehicleNode.getPosition()
 distance = round(roadPath.project(Point((position[0], position[1]))) - initialDistance, 3)
 
-print(f"performance_line:{distance}")
+if os.getenv('CI'):
+    print(f"performance_line:{distance}")
+    supervisor.animationStopRecording()
 
 supervisor.simulationSetMode(Supervisor.SIMULATION_MODE_PAUSE)
