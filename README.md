@@ -5,7 +5,7 @@
 </span>
 
 <!-- This is the shield badge where you can replace the webots.cloud link in brackets with your personal webots.cloud page -->
-[![webots.cloud - Benchmark](https://img.shields.io/badge/webots.cloud-Benchmark-007ACC)](https://benchmark.webots.cloud/run?version=R2022b&url=https%3A%2F%2Fgithub.com%2FJean-Eudes-le-retour%2Fhighway-driving-benchmark%2Fblob%2Fmain%2Fworlds%2Fhighway-driving.wbt&type=benchmark)
+[![webots.cloud - Benchmark](https://img.shields.io/badge/webots.cloud-Benchmark-007ACC)](https://benchmark.webots.cloud/run?version=R2022b&url=https%3A%2F%2Fgithub.com%2FJean-Eudes-le-retour%2Fhighway-driving-benchmark%2Fblob%2Fmain%2Fworlds%2Fhighway_driving.wbt&type=benchmark)
 
 <!-- TODO: add examples when available
 ## Benchmark examples

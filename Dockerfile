@@ -14,6 +14,7 @@ RUN pip3 install --upgrade pip && \
     lxml \
     pyproj \
     shapely \
+    rtree \
     webcolors \
     configparser
 
